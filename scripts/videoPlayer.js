@@ -119,6 +119,12 @@ export const videoPlayerInit = () => {
         }
     })
 
+    videoPlayerInit.stop = () => {
+        if (!videoPlayer.paused) {
+            stopPlay();
+        }
+    }
+
     
 
 };
